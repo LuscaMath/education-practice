@@ -440,6 +440,84 @@
     background-color: #ffff60;
 }
 
+/*Seção de informação*/
+
+.classInformation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 5rem 6rem;
+    gap: 3rem;
+}
+
+.classInformationParagraph {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.classInformationParagraph p {
+    width: 42%;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 1.0100rem;
+    color: #42434b;;
+}
+
+.classInformationTitle {
+    width: 100%;
+    display: flex;
+}
+
+.classInformationTitle h1 {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.1;
+    font-size: 3.75rem;
+    color: #42434b;;
+}
+
+/*Seção inovate*/
+
+.innovate {
+    width: 100%;
+    background-color: #fe7ec9;
+    padding: 4rem 3rem;
+}
+
+.innovateWrapper {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.innovateCardImgFirst {
+    width: 32%;
+    height: 500px;
+    background-image: url(../imagens/imagem5.jpg);
+    background-size: cover;
+}
+
+.innovateWrapper {
+    display: flex;
+}
+
+.innovateCardText {
+    background-color: #ffffff;
+    width: 32%;
+    height: 500px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.innovateCardImgSecond {
+    width: 32%;
+    height: 500px;
+    background-image: url(../imagens/imagem6.jpg);
+    background-size: cover;
+}
 
 
 
@@ -453,11 +531,21 @@
 
 
 
-/*Media querys*/
+
+/*Media query*/
 
 @media (max-width: 1181px) {
     .itemteste {
         padding: 3rem 0.8rem;
+    }
+
+    .classInformationParagraph p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .classInformationParagraph {
+        gap: 2rem;
     }
 }
 
@@ -521,6 +609,7 @@
         width: 100%;
         margin-top: 2rem;
     }
+
 }
 
 @media (max-width: 596px) {
@@ -529,6 +618,11 @@
         width: 500px;
         height: 500px;  
     }
+
+    .classInformation {
+        padding: 2rem;
+    }
+
 }
 
 @media (max-width: 471px) {
@@ -566,6 +660,19 @@
     .servicesCard {
         padding: 1rem;
     }
+
+    .classInformation {
+        padding: 1rem;
+    }
+
+    .classInformationTitle h1 {
+        font-size: 2.9rem;
+    }
+
+    .classInformationParagraph p {
+        font-size: 0.9rem;
+    }
+
 
 }
 
